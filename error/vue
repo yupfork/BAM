@@ -1,0 +1,2 @@
+  1、   {getStore(this.userName).then(res=>{this.$store.commit("addData",res.data),this.$router.push('/view')})}  在then中 -- 先执行commit 后跳转页面
+        {getStore(this.userName).then(res=>{this.$store.commit("addData",res.data)})   this.$router.push('/view')} 在then外  --先跳转页面后执行commit
